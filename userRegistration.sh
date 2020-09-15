@@ -27,3 +27,12 @@ else
         echo "Invalid Email ID"
 fi
 
+mobilePattern="^[0-9]{2}[ ][0-9]{10}$"
+read -p " Enter Your Mobile Number : +" mobileNumber
+if [[ $mobileNumber =~ $mobilePattern ]]
+then
+        echo "Valid Mobile Number"
+else
+        echo "Invalid Mobile Number"
+fi
+
