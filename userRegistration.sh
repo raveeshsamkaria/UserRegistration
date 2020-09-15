@@ -9,3 +9,12 @@ then
 else
         echo "Invalid First Name"
 fi
+
+read -p " Enter Your Last Name : " lastName
+if [[ $lastName =~ $namePattern ]]
+then
+        echo "Valid Last Name"
+else
+        echo "Invalid Last Name"
+fi
+
