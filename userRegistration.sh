@@ -36,3 +36,12 @@ else
         echo "Invalid Mobile Number"
 fi
 
+passwordPattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,}$"
+echo -e "Note : Password must fulfill following conditions.\n1. Minimum 8 Characters\n2. Atleast 1 Upper Case\n3. Atleast 1 Numeric Value\n4. Only 1 Special Character"
+read -p " Enter Your Password : " password
+if [[ $password =~ $passwordPattern ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
+fi
